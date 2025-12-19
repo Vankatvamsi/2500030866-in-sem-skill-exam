@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Album</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .album-container {
+            background: #111;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+        }
+
+        .album-cover {
+            flex: 1 1 300px;
+            background: #000;
+        }
+
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .album-details {
+            flex: 1 1 400px;
+            padding: 30px;
+        }
+
+        .album-details h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .album-details h2 {
+            margin-top: 8px;
+            font-weight: 400;
+            color: #bbb;
+        }
+
+        .album-details p {
+            margin: 15px 0;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .tracklist {
+            margin-top: 25px;
+        }
+
+        .tracklist h3 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tracklist ol {
+            padding-left: 20px;
+        }
+
+        .tracklist li {
+            padding: 8px 0;
+            border-bottom: 1px solid #2a2a2a;
+            font-size: 0.95rem;
+        }
+
+        .tracklist li:last-child {
+            border-bottom: none;
+        }
+
+        @media (max-width: 700px) {
+            .album-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="album-container">
+        <!-- Album Cover -->
+        <div class="album-cover">
+            <img src="https://fastly-s3.allmusic.com/release/mr0000765108/front/400/35ltm-O4NJEBWSqOC5yX64Af7E_1E-2MlBBPmPAXRBU=.jpg" alt="Album Cover">
+        </div>
+
+        <!-- Album Details -->
+        <div class="album-details">
+            <h1>Midnight Party</h1>
+            <h2>by Nova Beats</h2>
+
+            <p>
+                <strong>Midnight Party</strong> is a soulful electronic album that blends
+                ambient melodies with deep beats, perfect for late-night listening.
+            </p>
+
+            <!-- Track List -->
+            <div class="tracklist">
+                <h3>Track List</h3>
+                <ol>
+                    <li>Neon Skies</li>
+                    <li>Lost Frequencies</li>
+                    <li>Midnight Drive</li>
+                    <li>Echoes in Silence</li>
+                    <li>City Lights</li>
+                    <li>Afterglow</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
